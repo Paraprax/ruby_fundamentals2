@@ -1,0 +1,3 @@
+def greet_backwards(name)
+    "Hi #{name.reverse}#{name.reverse}, welcome home!"
+  end
