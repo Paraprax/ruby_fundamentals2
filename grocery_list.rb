@@ -15,4 +15,8 @@
   puts "This list is #{grocery_list.length} items long."
 
  #check for bananas
-    grocery_list.include?("bananas")
+    if grocery_list.include?("bananas") == true
+        puts "You need to pick up bananas."
+      else
+        puts "You don't need to pick up bananas today."
+      end
