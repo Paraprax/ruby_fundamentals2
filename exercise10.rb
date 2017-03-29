@@ -16,14 +16,28 @@ puts students.keys
 
 puts "Increasing cohort sizes by 5%"
 
-  students.each do |k,v|
-    puts "#{k},#{v*1.05}"
-  end
+    students.each do |k,v|
+      students[k]*= 1.05
+    end
+
+    students.each do |k,v|
+       puts "#{k},#{v}"
+     end
+
+puts students
 
   students.delete(:cohort2)
 
   puts "deleting second cohort"
 
-  puts students.each do |k,v|
-      puts "#{k},#{v*1.05}"
+   students.each do |k,v|
+      puts "#{k},#{v}"
     end
+
+      total = 0
+
+    students.each do |k,v|
+      total += v*1.05
+    end
+
+    puts total
